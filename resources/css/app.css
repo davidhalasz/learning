@@ -1,3 +1,136 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.dynamic-height {
+    height: calc(100vh - 80px);
+}
+
+/* INDEX COUNTER */
+.counter {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+/* INDEX CARD */
+.card {
+    overflow: hidden;
+}
+
+.card-desc {
+    opacity: 0;
+    transition: opacity 0.05s ease;
+    overflow: hidden;
+}
+
+
+.card:hover .card-desc {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    transition-delay: 0.38s;
+    display: block;
+}
+
+.card-content {
+   max-height: 100px;
+   transition: max-height 0.35s ease;
+   z-index: 3;
+}
+
+.card-btn {
+    z-index: 3;
+}
+
+.card:hover .card-content {
+    max-height: 600px;
+    transition: max-height 0.35s ease-in;
+}
+
+.card-img{
+    overflow: hidden;
+}
+
+.card-img img {
+    transition: 0.35s all;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.card-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Dark overlay color */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease;
+    z-index: 3;
+}
+
+.card:hover .card-img::after {
+    opacity: 1;
+}
+
+.card:hover .card-img img {
+    transition: 0.4s all;
+    transform: scale(1.1);
+}
+
+.card:hover .card-img {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+
+/*end card   bg-[#dfe5ea]*/
+
+.linear-bg {
+    background: linear-gradient(-180deg,#eef2f5 20%,#fff);
+}
+
+
+.move1 {
+    position: relative;
+    top: -100px;
+    left: -200px;
+    animation: slideDown 1s ease forwards;
+}
+
+.move2 {
+    position: relative;
+    top: -100px;
+    left: 0px;
+    animation: slideDown 1s ease forwards;
+}
+
+.move3 {
+    position: relative;
+    top: -100px;
+    left: 200px;
+    animation: slideDown 1s ease forwards;
+}
+
+.move4 {
+    position: relative;
+    top: 100px;
+    left: -100px;
+    animation: slideDown 1s ease forwards;
+}
+
+.move5 {
+    position: relative;
+    top: 100px;
+    left: 200px;
+    animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+    to {
+      top: 0;
+      left: 0;
+    }
+  }

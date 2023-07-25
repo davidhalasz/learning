@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [Controller::class, 'index'])->name('index');
+Route::get('/rolunk', [Controller::class, 'rolunk'])->name('rolunk');
+Route::get('/kepzesek', [Controller::class, 'kepzesek'])->name('kepzesek');
+Route::get('/uzletviteli_tanacsadas', [Controller::class, 'uzletviteli'])->name('uzletviteli');
+Route::get('/business_coaching', [Controller::class, 'coaching'])->name('coaching');
+Route::get('/kapcsolat', [Controller::class, 'kapcsolat'])->name('kapcsolat');
+

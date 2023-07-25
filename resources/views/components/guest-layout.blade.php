@@ -18,5 +18,6 @@
         <div class="">
             {{ $slot }}
         </div>
+        @include('components.footer')
     </body>
 </html>

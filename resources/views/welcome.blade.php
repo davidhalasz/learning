@@ -1,5 +1,6 @@
 <x-guest-layout>
-    <div class="container mx-auto">
-        hello
-    </div>
+    @include('components.welcome.carousel')
+    @include('components.welcome.counter')
+    @include('components.welcome.trainings')
+    @include('components.welcome.explore')
 </x-guest-layout>
