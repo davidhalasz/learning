@@ -1,8 +1,8 @@
 <div class="w-full mt-10 py-20 bg-[#eef2f5]">
-    <h1 class="text-4xl font-bold text-center">Aktuális kiemelt képzéseink</h1>
-    <div class="mt-14 container mx-auto">
-        <div class="grid grid-cols-3 gap-8">
-            <div class="card relative w-full h-[400px] rounded-xl shadow-lg rounded-xl">
+    <h1 class="text-2xl md:text-4xl font-bold text-center">Aktuális kiemelt képzéseink</h1>
+    <div class="mt-14 container mx-auto px-4 lg:px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card relative w-full h-[300px] lg:h-[400px] rounded-xl shadow-lg rounded-xl">
                 <div class="card-img">
                     <img src="{{ asset('images/tanacsadas.jpeg') }}"
                         alt="">
@@ -21,7 +21,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card relative w-full h-[400px] rounded-xl shadow-lg rounded-xl">
+            <div class="card relative w-full h-[300px] lg:h-[400px] rounded-xl shadow-lg rounded-xl">
                 <div class="card-img">
                     <img src="{{ asset('images/coach.jpeg') }}"
                         alt="">

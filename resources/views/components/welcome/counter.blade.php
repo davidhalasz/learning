@@ -1,21 +1,21 @@
-<div class="-mt-10 mb-20 container mx-auto flex justify-center gap-20" id="display-counter">
+<div class="-mt-10 mb-20 container mx-auto flex flex-col lg:flex-row justify-center gap-8 md:gap-20" id="display-counter">
     <div class="flex flex-col">
-        <div class="w-full text-center text-4xl font-bold">
+        <div class="w-full text-center text-2xl md:text-4xl font-bold">
             <span id="counter1" class="counter">0</span>+
         </div>
-        <p class="text-xl pt-2">év felnőttképzési tapasztalat</p>
+        <p class="text-lg md:text-xl pt-2 text-center lg:text-left">év felnőttképzési tapasztalat</p>
     </div>
     <div class="flex flex-col">
-        <div class="w-full text-center text-4xl font-bold">
+        <div class="w-full text-center text-2xl md:text-4xl font-bold">
             <span id="counter2" class="counter">0</span>+
         </div>
-        <p class="text-xl pt-2">elméleti és gyakorlati lean képzési tematika</p>
+        <p class="text-lg md:text-xl pt-2 text-center lg:text-left">elméleti és gyakorlati lean képzési tematika</p>
     </div>
     <div class="flex flex-col">
-        <div class="w-full text-center text-4xl font-bold">
+        <div class="w-full text-center text-2xl md:text-4xl font-bold">
             <span id="counter3" class="counter">0</span>+
         </div>
-        <p class="text-xl pt-2">képzés résztvevő</p>
+        <p class="text-lg md:text-xl pt-2 text-center lg:text-left">képzés résztvevő</p>
     </div>
     <script>
         const counterElement1 = document.getElementById('counter1');

@@ -1,30 +1,30 @@
 <div class="container mx-auto linear-bg py-20 mt-10 rounded-[50px]">
-    <h1 class="text-center font-bold text-6xl">Explore the</h1>
-    <h1 class="text-center font-bold text-6xl">Learning Center.</h1>
+    <h1 class="text-center font-bold text-3xl md:text-6xl">Explore the</h1>
+    <h1 class="text-center font-bold text-3xl md:text-6xl">Learning Center.</h1>
     <div class="flex justify-center py-10">
-        <p class="text-center text-2xl w-[650px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        <p class="text-center text-xl md:text-2xl md:w-full lg:w-[650px] px-10 md:px-20 lg:px-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             ultrices porta urna, vitae hendrerit ipsum
             rhoncus placerat. Nam nec leo quis mi dictum convallis quis ac mi. Vivamus rutrum ultricies nunc.</p>
     </div>
 
     <div class="flex flex-col mt-8">
-        <div class="grid grid-cols-2 gap-20 px-24">
-            <div class="w-full dynamic-height shadow-2xl flex justify-end" id="dynamic-height">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 px-10 md:px-20 lg:px-24">
+            <div class="order-last lg:order-none w-full dynamic-height shadow-2xl flex justify-end" id="dynamic-height">
                 <img class="w-full h-full object-cover rounded-xl " src="{{ asset('images/kepzes1.png') }}"
                     alt="" />
             </div>
             <div class="flex items-center justify-start">
                 <div>
-                    <h2 class="text-4xl font-bold py-2">Suspendisse elementum</h2>
-                    <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ipsum justo, vitae cursus sem fringilla quis. Curabitur nulla nulla, ornare quis dictum eget, aliquam eget magna. </p>
+                    <h2 class="text-2xl md:text-4xl font-bold py-2">Suspendisse elementum</h2>
+                    <p class="text-lg md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ipsum justo, vitae cursus sem fringilla quis. Curabitur nulla nulla, ornare quis dictum eget, aliquam eget magna. </p>
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-2 gap-20 px-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 px-10 md:px-20 pt-14 lg:pt-0">
             <div class="flex items-center justify-start">
                 <div>
-                    <h2 class="text-4xl font-bold py-2">Curabitur eu</h2>
-                    <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ipsum justo, vitae cursus sem fringilla quis. Curabitur nulla nulla, ornare quis dictum eget, aliquam eget magna.
+                    <h2 class="text-2xl md:text-4xl font-bold py-2">Curabitur eu</h2>
+                    <p class="text-lg md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ipsum justo, vitae cursus sem fringilla quis. Curabitur nulla nulla, ornare quis dictum eget, aliquam eget magna.
                     </p>
                 </div>
             </div>
@@ -33,23 +33,23 @@
                     alt="" />
             </div>
         </div>
-        <div class="grid grid-cols-2 gap-20 px-24">
-            <div class="w-full dynamic-height shadow-2xl flex justify-end" id="dynamic-height">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 px-10 md:px-20 pt-14 lg:pt-0"">
+            <div class="order-last lg:order-none w-full dynamic-height shadow-2xl flex justify-end" id="dynamic-height">
                 <img class="w-full h-full object-cover rounded-xl " src="{{ asset('images/kepzes3.jpeg') }}"
                     alt="" />
             </div>
             <div class="flex items-center justify-start">
                 <div>
-                    <h2 class="text-4xl font-bold py-2">Donec blandit</h2>
-                    <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ipsum justo, vitae cursus sem fringilla quis. Curabitur nulla nulla, ornare quis dictum eget, aliquam eget magna.</p>
+                    <h2 class="text-2xl md:text-4xl font-bold py-2">Donec blandit</h2>
+                    <p class="text-lg md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ipsum justo, vitae cursus sem fringilla quis. Curabitur nulla nulla, ornare quis dictum eget, aliquam eget magna.</p>
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-2 gap-20 px-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 px-10 md:px-20 pt-14 lg:pt-0"">
             <div class="flex items-center justify-start">
                 <div>
-                    <h2 class="text-4xl font-bold py-2">Interim management</h2>
-                    <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ipsum justo, vitae cursus sem fringilla quis. Curabitur nulla nulla, ornare quis dictum eget, aliquam eget magna.
+                    <h2 class="text-2xl md:text-4xl font-bold py-2">Interim management</h2>
+                    <p class="text-lg md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ipsum justo, vitae cursus sem fringilla quis. Curabitur nulla nulla, ornare quis dictum eget, aliquam eget magna.
                     </p>
                 </div>
             </div>

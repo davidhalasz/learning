@@ -3,7 +3,7 @@
 @endphp
 <nav x-data="{ open: false }" class="bg-transparent">
     <div class="container mx-auto">
-        <div class="flex justify-between items-center h-20">
+        <div class="flex justify-between items-center h-20 px-4">
             <a href="/" class="text-gray-600 text-xl font-semibold">
                 LOGO
             </a>
@@ -12,7 +12,7 @@
             <div class="flex md:hidden">
                 <button @click="open = !open" class="text-gray-600 hover:text-gray-600 focus:outline-none">
                     <svg x-show="!open" class="text-gray-600 h-6 w-6" viewBox="0 0 24 24">
-                        <path  fill="#2174fa" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
+                        <path  fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
                     </svg>
                     <svg x-show="open" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">

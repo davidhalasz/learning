@@ -1,7 +1,7 @@
 <div class="w-full bg-[#dfe5ea] py-16">
     <div class="container mx-auto">
         <div class="flex justify-center">
-            <div class="grid grid-cols-4 w-fit gap-16">
+            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 w-fit gap-8 lg:gap-16">
                 <div>
                     <h1 class="text-xl mb-4">LOGO CENTER</h1>
                     <p>North Coast Tanácsadó Kft. </br>
