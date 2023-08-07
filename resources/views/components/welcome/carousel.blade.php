@@ -3,7 +3,7 @@
         nextSlide() {
             this.activeSlide = (this.activeSlide + 1) % slides.length;
         }
-    }" x-init="() => setInterval(() => nextSlide(), 3000)">
+    }" x-init="() => setInterval(() => nextSlide(), 90000)">
         <div class="container mx-auto md:px-8">
             <div class="relative lg:mt-14">
                 @foreach ($slides as $index => $slide)

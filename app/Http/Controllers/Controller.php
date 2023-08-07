@@ -13,19 +13,19 @@ class Controller extends BaseController
     public function index() {
         $slides = [
             [
-                'title' => 'Your space to learn, connect, and be inspired.',
-                'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'title' => 'Üzletviteli tanácsadás',
+                'content' => 'Stratégia. Megoldás. Eredmény. Sikeres projekt. Az üzletviteli tanácsadás ereje.',
                 'images' => [
-                    'index1.jpg',
+                    'index1.jpeg',
                     'index2.jpeg',
-                    'index3.jpeg',
-                    'index4.jpeg',
-                    'index7.jpeg'
+                    'index3.jpg',
+                    'index4.jpg',
+                    'index7.jpg'
                 ],
             ],
             [
-                'title' => 'Explore the Learning Center.',
-                'content' => 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                'title' => 'Business coaching',
+                'content' => 'Maximalizáld potenciálodat, lépj a siker útjára!',
                 'images' => [
                     'index8.jpeg',
                     'index9.jpeg',
