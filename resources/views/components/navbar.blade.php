@@ -1,11 +1,11 @@
 @php
     $routeName = Route::currentRouteName();
 @endphp
-<nav x-data="{ open: false }" class="bg-transparent">
+<nav x-data="{ open: false }" class="bg-blue-50">
     <div class="container mx-auto">
-        <div class="flex justify-between items-center h-20 px-4">
+        <div class="flex justify-between items-center h-32 px-4 ">
             <a href="/" class="text-gray-600 text-xl font-semibold">
-                LOGO
+                <img class="h-28" src="{{asset('images/NORTH-COAST.png')}}" alt="">
             </a>
 
             <!-- Hamburger button -->

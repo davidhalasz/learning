@@ -1,10 +1,8 @@
 <div class="container mx-auto linear-bg py-20 mt-10 rounded-[50px]">
-    <h1 class="text-center font-bold text-3xl md:text-6xl">Explore the</h1>
-    <h1 class="text-center font-bold text-3xl md:text-6xl">Learning Center.</h1>
+    <h1 class="text-center font-bold text-3xl md:text-6xl">Képzések, tanácsadás,</h1>
+    <h1 class="text-center font-bold text-3xl md:text-6xl">szervezetfejlesztés.</h1>
     <div class="flex justify-center py-10">
-        <p class="text-center text-xl md:text-2xl md:w-full lg:w-[650px] px-10 md:px-20 lg:px-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            ultrices porta urna, vitae hendrerit ipsum
-            rhoncus placerat. Nam nec leo quis mi dictum convallis quis ac mi. Vivamus rutrum ultricies nunc.</p>
+        <p class="text-center text-xl md:text-2xl md:w-full lg:w-[650px] px-10 md:px-20 lg:px-0">Növelje Önmaga és cége hatékonyságát és versenyképességét.</p>
     </div>
 
     <div class="flex flex-col mt-8">

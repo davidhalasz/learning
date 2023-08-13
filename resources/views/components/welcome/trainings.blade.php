@@ -1,4 +1,4 @@
-<div class="w-full mt-10 py-20 bg-[#eef2f5]">
+<div class="w-full mt-10 py-20 bg-blue-50">
     <h1 class="text-2xl md:text-4xl font-bold text-center">Aktuális kiemelt képzéseink</h1>
     <div class="mt-14 container mx-auto px-4 lg:px-0">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -8,8 +8,8 @@
                         alt="">
                 </div>
                 <div class="card-content absolute bottom-8 w-full py-4 px-4 content bg-white">
-                    <h2 class="mb-4 font-bold">Üzletviteli tanácsadás</h2>
-                    <p class="card-desc text-gray-600 mb-10">Egy projekt sikere sok mindenen múlik. Az előkészítés, megvalósítás és monitorozás egyaránt kulcsfontosságú ciklusa egy projekt eredményes megvalósításának...</p>
+                    <h2 class="mb-4 font-bold">Cost saving / Költségcsökkentési ismeretek</h2>
+                    <p class="card-desc text-gray-600 mb-10">Képzésünk bemutatása Szeretne hatékonyabbá és versenyképesebbé válni a vállalatánál? Szeretné optimalizálni a folyamatokat...</p>
                 </div>
                 <div class="py-4 card-btn absolute bottom-0 w-full bg-white">
                     <a href="/uzletviteli_tanacsadas" class="p-4 text-emerald-600 flex items-center">
@@ -27,8 +27,8 @@
                         alt="">
                 </div>
                 <div class="card-content absolute bottom-8 w-full py-4 px-4 content bg-white">
-                    <h2 class="mb-4 font-bold">Business coaching</h2>
-                    <p class="card-desc text-gray-600 mb-10">A sikeres vezetőknek kell rendelkezniük a szükséges kompetenciákkal és ismeretekkel ahhoz, hogy hatékonyan irányítsák a szervezetüket és elérjék a kitűzött célokat...</p>
+                    <h2 class="mb-4 font-bold">Lean benchmarking nap </h2>
+                    <p class="card-desc text-gray-600 mb-10">A szakmai napról Egy világmárkának számító gyár termelési rendszerébe belelátni, megismerni annak lényegi elemeit minden lean szakember álma...</p>
                 </div>
                 <div class="py-4 card-btn absolute bottom-0 w-full bg-white">
                     <a href="/business_coaching" class="p-4 text-emerald-600 flex items-center">
