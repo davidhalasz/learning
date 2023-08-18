@@ -27,24 +27,14 @@ class Controller extends BaseController
                 'title' => 'Business coaching',
                 'content' => 'Maximalizáld potenciálodat, lépj a siker útjára!',
                 'images' => [
-                    'index8.jpeg',
-                    'index9.jpeg',
-                    'index6.jpeg',
-                    'index5.jpeg',
-                    'index7.jpeg'
-                ],
-            ],
-            [
-                'title' => 'Connect in the Forum.',
-                'content' => 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-                'images' => [
+                    'index13.jpg',
                     'index11.jpeg',
-                    'index12.jpeg',
                     'index10.jpeg',
-                    'index4.jpeg',
-                    'index7.jpeg'
+                    'index5.jpeg',
+                    'index12.jpeg'
                 ],
             ],
+
         ];
 
         return view('welcome', compact(['slides']));

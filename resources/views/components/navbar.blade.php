@@ -28,9 +28,9 @@
                     class="px-4 py-2 text-lg font-bold rounded-sm {{ $routeName == 'index' ? 'underline underline-offset-4 decoration-double decoration-gray-700 text-gray-600' : 'text-gray-600 hover:text-gray-600' }}">
                     Főoldal
                 </a>
-                <a href="/rolunk"
-                    class="px-4 py-2 text-lg font-bold rounded-sm {{ $routeName == 'rolunk' ? 'underline underline-offset-4 decoration-double decoration-gray-700 text-gray-600' : 'text-gray-600 hover:text-gray-600' }}">
-                    Rólunk
+                <a onclick="scrollToDiv()"
+                    class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer {{ $routeName == 'rolunk' ? 'underline underline-offset-4 decoration-double decoration-gray-700 text-gray-600' : 'text-gray-600 hover:text-gray-600' }}">
+                    Szolgáltatások
                 </a>
                 <a href="/kepzesek"
                     class="px-4 py-2 text-lg font-bold rounded-sm {{ $routeName == 'guest.araink' ? 'underline underline-offset-4 decoration-double decoration-gray-700 text-gray-600' : 'text-gray-600 hover:text-gray-600' }}">

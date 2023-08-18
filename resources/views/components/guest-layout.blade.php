@@ -19,5 +19,14 @@
             {{ $slot }}
         </div>
         @include('components.footer')
+        <script>
+            function scrollToDiv() {
+                window.location.href = '/#szolgaltatasok';
+                var div = document.getElementById("szolgaltatasok");
+                div.scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        </script>
     </body>
 </html>
