@@ -16,4 +16,6 @@ use App\Http\Controllers\Controller;
 
 Route::get('/', [Controller::class, 'index'])->name('index');
 Route::get('/verzio2', [Controller::class, 'verzio2'])->name('verzio2');
+Route::get('/verzio3', [Controller::class, 'verzio3'])->name('verzio3');
+Route::get('/verzio4', [Controller::class, 'verzio4'])->name('verzio4');
 

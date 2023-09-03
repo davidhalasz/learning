@@ -1,6 +1,6 @@
-<div class="w-full bg-gray-300 py-10">
-    <div id="uzletviteliTanacsadas" class="container mx-auto bg-white py-20 rounded-[50px]">
-        <h1 class="text-center font-bold text-3xl md:text-5xl" >Üzletviteli tanácsadás</h1>
+<div class="w-full bg-[#CAC6C6] pt-10">
+    <div id="uzletviteliTanacsadas" class="container mx-auto linear-bg-1 py-20 rounded-[50px]">
+        <h1 class="text-center font-bold text-3xl md:text-6xl">Üzletviteli tanácsadás</h1>
         <div class="flex justify-center py-10 px-4">
             <p class="text-center text-xl md:text-2xl md:w-[650px]">Egy projekt sikere sok mindenen múlik. Az
                 előkészítés, megvalósítás és monitorozás egyaránt kulcsfontosságú ciklusa egy projekt eredményes
@@ -8,46 +8,48 @@
         </div>
 
         <div class="flex flex-col mt-4 md:mt-8">
-            <div class="flex flex-row gap-10 lg:gap-10 px-4 md:px-24">
-                <div class="basis-2/12 items-center flex justify-end">
-                    <img class="w-full h-full object-cover rounded-xl dynamic-height shadow-2xl" id="dynamic-height"
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 px-4 md:px-24">
+                <div class="order-last lg:order-none w-full dynamic-height shadow-2xl flex justify-end"
+                    id="dynamic-height">
+                    <img class="w-full h-full object-cover rounded-xl "
                         src="{{ asset('images/tanacsadas_elokeszites.jpeg') }}" alt="" />
                 </div>
-                <div class="basis-9/12 flex items-center justify-start">
+                <div class="flex items-center justify-start">
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold py-2">Előkészítés</h2>
-                        <p class="md:text-lg">Hiszünk abban, hogy egy projekt legfontosabb ciklusa az előkészítés,
+                        <h2 class="text-xl md:text-4xl font-bold py-2">Előkészítés</h2>
+                        <p class="md:text-xl">Hiszünk abban, hogy egy projekt legfontosabb ciklusa az előkészítés,
                             ezért cégprofilunkat is ebben a hitben építettük fel. Hiszünk abban, hogy megfelelő
                             előkészítő munkával biztos alapot lehet építeni, ami a projekt teljes lebonyolítási
                             időszaka alatt biztosítékként szolgál a sikeres megvalósításhoz.</p>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row gap-10 lg:gap-10 px-4 md:px-24 mt-10 lg:mt-0">
-                <div class="basis-9/12 flex items-center justify-start">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 px-4 md:px-24 mt-10 lg:mt-0">
+                <div class="flex items-center justify-start">
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold py-2">Tanácsadás</h2>
-                        <p class="md:text-lg">Célunk, hogy szakértői közreműködésünkkel legmagasabb szinten
+                        <h2 class="text-xl md:text-4xl font-bold py-2">Tanácsadás</h2>
+                        <p class="md:text-xl">Célunk, hogy szakértői közreműködésünkkel legmagasabb szinten
                             nyújtsunk szakmai segítséget partnereink részére a projekt előkészítés minden területén,
                             legyen szó helyzetelemzésről, előkészítő tanulmányokról vagy pénzügyi és műszaki
                             tervezésről.
                         </p>
                     </div>
                 </div>
-                <div class="basis-2/12 items-center flex justify-end">
-                    <img class="w-full h-full object-cover rounded-xl dynamic-height shadow-2xl" id="dynamic-height" src="{{ asset('images/kepzes2.jpeg') }}"
+                <div class="w-full dynamic-height shadow-2xl flex justify-end" id="dynamic-height">
+                    <img class="w-full h-full object-cover rounded-xl " src="{{ asset('images/kepzes2.jpeg') }}"
                         alt="" />
                 </div>
             </div>
-            <div class="flex flex-row gap-10 lg:gap-10 px-4 md:px-24 mt-10 lg:mt-0">
-                <div class="basis-2/12 flex justify-end items-center">
-                    <img class="w-full h-full object-cover shadow-2xl rounded-xl dynamic-height" id="dynamic-height" src="{{ asset('images/kepzes3.jpeg') }}"
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 px-4 md:px-24 mt-10 lg:mt-0">
+                <div class="order-last lg:order-none w-full dynamic-height shadow-2xl flex justify-end"
+                    id="dynamic-height">
+                    <img class="w-full h-full object-cover rounded-xl " src="{{ asset('images/kepzes3.jpeg') }}"
                         alt="" />
                 </div>
-                <div class="basis-9/12 flex items-center justify-start">
+                <div class="flex items-center justify-start">
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold py-2">Egyedi problémamegoldás</h2>
-                        <p class="md:text-lg">Legfontosabb értékünk a bizalom. Partnereink igényeire kiemelt
+                        <h2 class="text-xl md:text-4xl font-bold py-2">Egyedi problémamegoldás</h2>
+                        <p class="md:text-xl">Legfontosabb értékünk a bizalom. Partnereink igényeire kiemelt
                             figyelmet fordítunk, törekszünk az elképzelések és igények teljes feltérképezésére.
                             Cégünk széleskörű tapasztalatokkal rendelkezik projektek előkészítése és megvalósítása
                             területén, ezért partnereink mindig kiszámítható környezetben, az esetlegesen felmerülő
@@ -59,9 +61,9 @@
     </div>
 </div>
 
-<div class="w-full bg-[#0F335B] py-10">
+<div class="w-full bg-[#b2ccee] pt-10">
     <div id="businessCoaching" class="container mx-auto linear-bg-2 py-20 rounded-[50px]">
-        <h1 class="text-center font-bold text-3xl md:text-5xl">Business coaching</h1>
+        <h1 class="text-center font-bold text-3xl md:text-6xl">Business coaching</h1>
         <div class="flex justify-center py-10 px-4">
             <p class="text-center text-xl md:text-2xl md:w-[650px]">A sikeres vezetőknek kell rendelkezniük a
                 szükséges kompetenciákkal és ismeretekkel ahhoz, hogy hatékonyan irányítsák a szervezetüket és
@@ -69,46 +71,47 @@
         </div>
 
         <div class="flex flex-col mt-4 md:mt-8">
-            <div class="flex flex-row gap-10 lg:gap-10 px-4 md:px-24">
-                <div class="basis-3/12 w-full flex justify-end">
-                    <img id="dynamic-height" class="w-full h-full object-cover rounded-xl dynamic-height shadow-2xl" src="{{ asset('images/kepzes5.jpg') }}"
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 px-4 md:px-24">
+                <div class="order-last lg:order-none w-full dynamic-height shadow-2xl flex justify-end"
+                    id="dynamic-height">
+                    <img class="w-full h-full object-cover rounded-xl " src="{{ asset('images/kepzes5.jpg') }}"
                         alt="" />
                 </div>
-                <div class="basis-9/12 flex items-center justify-start">
+                <div class="flex items-center justify-start">
                     <div>
-                        <h2 class="text-xl md:text-3xl font-bold py-2">Egyéni fejlődés és szervezetfejlesztés</h2>
-                        <p class="md:text-lg">A business coaching nemcsak a vezetők egyéni fejlődését segíti elő,
+                        <h2 class="text-xl md:text-4xl font-bold py-2">Egyéni fejlődés és szervezetfejlesztés</h2>
+                        <p class="md:text-xl">A business coaching nemcsak a vezetők egyéni fejlődését segíti elő,
                             hanem hatása kiterjed a szervezet egészére is. A motivált és magabiztos vezetők nagyobb
                             körültekintéssel tudnak irányítani, inspirálni és támogatni a csapatukat. Ez elősegíti
                             az együttműködést és a teljesítmény növekedését a szervezetben.</p>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row gap-10 lg:gap-10 px-4 md:px-24 mt-10 lg:mt-0">
-                <div class="basis-9/12 flex items-center justify-start">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 px-4 md:px-24 mt-10 lg:mt-0">
+                <div class="flex items-center justify-start">
                     <div>
-                        <h2 class="text-xl md:text-3xl font-bold py-2">Környezetváltozások kezelése</h2>
-                        <p class="md:text-lg">A coaching folyamatán keresztül a vezetők képesek lesznek átlátni a
+                        <h2 class="text-xl md:text-4xl font-bold py-2">Környezetváltozások kezelése</h2>
+                        <p class="md:text-xl">A coaching folyamatán keresztül a vezetők képesek lesznek átlátni a
                             környezeti változásokat, az üzleti lehetőségeket és kockázatokat, valamint rugalmasan
                             alkalmazkodni az új kihívásokhoz.
                         </p>
                     </div>
                 </div>
-                <div class="basis-3/12 w-full  flex justify-end" >
-                    <img class="w-full h-full object-cover rounded-xl dynamic-height shadow-2xl" id="dynamic-height"
+                <div class="w-full dynamic-height shadow-2xl flex justify-end" id="dynamic-height">
+                    <img class="w-full h-full object-cover rounded-xl "
                         src="{{ asset('images/coaching_kornyezetvaltozas.jpeg') }}" alt="" />
                 </div>
             </div>
-            <div class="flex flex-row gap-10 lg:gap-10 px-4 md:px-24 mt-10 lg:mt-0">
-                <div class="basis-3/12 w-full flex justify-end"
-                    >
-                    <img class="w-full h-full object-cover rounded-xl  dynamic-height shadow-2xl" id="dynamic-height"
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 px-4 md:px-24 mt-10 lg:mt-0">
+                <div class="order-last lg:order-none w-full dynamic-height shadow-2xl flex justify-end"
+                    id="dynamic-height">
+                    <img class="w-full h-full object-cover rounded-xl "
                         src="{{ asset('images/coaching_novekedes1.jpeg') }}" alt="" />
                 </div>
-                <div class="basis-9/12 flex items-center justify-start">
+                <div class="flex items-center justify-start">
                     <div>
-                        <h2 class="text-xl md:text-3xl font-bold py-2">Teljesítményfejlesztés és növekedés</h2>
-                        <p class="md:text-lg">Összességében a business coaching jelentős hatással van a vezetők és a
+                        <h2 class="text-xl md:text-4xl font-bold py-2">Teljesítményfejlesztés és növekedés</h2>
+                        <p class="md:text-xl">Összességében a business coaching jelentős hatással van a vezetők és a
                             szervezet egészének teljesítményére. Fejleszti a vezetők minőségét, segít a növekedésben,
                             elősegíti a stratégiai kialakítást és az új célok kitűzését. A coaching segítségével a
                             vezetők magabiztosságot és motivációt nyernek.</p>
@@ -119,10 +122,10 @@
     </div>
 </div>
 
-<div class="w-full bg-white md:py-10">
-    <div id="felnottkepzes" class="container mx-auto  py-14 md:py-20 rounded-[50px]  px-4 md:px-0">
+<div class="w-full bg-[#7fa0cb] md:py-10">
+    <div id="felnottkepzes" class="container mx-auto  py-14 md:py-20 rounded-[50px] text-gray-100 px-4 md:px-0">
         <h1 class="text-center font-bold text-3xl md:text-6xl">Felnőttképzés</h1>
-        <div class="w-full md:w-[450px]  md:h-[450px] mx-auto mt-10 py-8 lg:py-4 rounded-2xl linear-bg-3 text-white shadow-xl">
+        <div class="w-full md:w-[450px]  md:h-[450px] mx-auto mt-10 py-8 lg:py-4 rounded-2xl linear-bg-3">
             <div class="w-full h-full flex flex-col">
                 <div class="h-fit m-auto">
                     <p class="px-4 text-lg">
@@ -142,7 +145,7 @@
                         Hétfőtől-Péntekig: 8:00-16:30</br>
                         Szombat és Vasárnap: ZÁRVA
                     </p>
-                    <a href="#" class="p-4 text-green-400 flex items-center text-lg hover:text-blue-100">
+                    <a href="#" class="p-4 font-bold text-emerald-100 flex items-center text-lg hover:text-blue-700">
                         <p>Adatkezelési tájékoztató</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor" class="w-4 h-4">

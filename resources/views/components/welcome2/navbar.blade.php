@@ -44,6 +44,19 @@
                     class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer text-gray-600 hover:text-gray-600">
                     Kapcsolat
                 </a>
+                <a href="/verzio2"
+                class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer text-gray-600 hover:text-gray-600">
+                V2
+            </a>
+            <a href="/verzio3"
+            class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer text-gray-600 hover:text-gray-600">
+            V3
+        </a>
+    </a>
+    <a href="/verzio4"
+    class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer text-gray-600 hover:text-gray-600">
+    V4
+</a>
             </div>
         </div>
 

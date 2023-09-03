@@ -255,3 +255,11 @@ html {
 .darkBlue {
     color: #0f4e95;
 }
+
+.navbarheight{
+    height: calc(100vh - 144px);
+    height: -o-calc(100vh - 144px); /* opera */
+    height: -webkit-calc(100vh - 144px); /* google, safari */
+    height: -moz-calc(100vh - 144px); /* firefox */
+}
+

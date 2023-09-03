@@ -10,11 +10,13 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <link href="
+https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css
+" rel="stylesheet">
 
     <!-- Scripts -->
 
-    <link rel="stylesheet" href="/build/assets/app-96fc153f.css">
-    <script src="/build/assets/app-476eb4f6.js" defer></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Scripts -->
 </head>
