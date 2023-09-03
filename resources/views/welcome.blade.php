@@ -1,6 +1,8 @@
 <x-guest-layout>
-    @include('components.welcome.carousel')
-    @include('components.welcome.counter')
-    @include('components.welcome.trainings')
+    <div class="gradientBg3">
+        @include('components.navbar')
+        @include('components.welcome.carousel')
+    </div>
+
     @include('components.welcome.explore')
 </x-guest-layout>

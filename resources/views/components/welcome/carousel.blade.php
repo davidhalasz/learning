@@ -1,126 +1,138 @@
-<div class="md:mt-8 lg:mt-16 relative h-[570px] md:h-[800px] lg:h-[700px] overflow-hidden" x-data="{
-        activeSlide: 0,
-        nextSlide() {
-            this.activeSlide = (this.activeSlide + 1) % slides.length;
-        }
-    }" x-init="() => setInterval(() => nextSlide(), 3000)">
-        <div class="container mx-auto md:px-8">
-            <div class="relative lg:mt-14">
-                @foreach ($slides as $index => $slide)
-                    <div x-show="activeSlide === {{ $index }}" class="absolute inset-0 transition-opacity"
-                        x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0"
-                        x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200"
-                        x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
-                        <div class="w-full flex flex-col lg:flex-row gap-4">
-                            <div class="w-full md:w-2/3 lg:w-1/2 lg:h-[500px] flex items-center px-8 md:px-0 mb-4 lg:mb-0">
-                                <div>
-                                    <h3 class="text-2xl md:text-3xl md:text-5xl font-semibold mb-8">{{ $slide['title'] }}</h3>
-                                    <p class="text-lg md:text-xl md:text-2xl">{{ $slide['content'] }}</p>
-                                </div>
-                            </div>
+<div class="md:pt-8 lg:pt-12 relative h-[570px] md:h-[800px] lg:h-[700px] overflow-hidden" x-data="{
+    activeSlide: 0,
+    nextSlide() {
+        this.activeSlide = (this.activeSlide + 1) % slides.length;
+    }
+}"
+    x-init="() => setInterval(() => nextSlide(), 4000)">
+    <div class="container mx-auto md:px-8 pt-4 lg:pt-0">
+        <div class="relative">
+            @foreach ($slides as $index => $slide)
+                <div x-show="activeSlide === {{ $index }}" class="">
+                    <div class="w-full flex flex-col lg:flex-row gap-4">
+                        <div class="w-full md:w-full lg:w-1/2 lg:h-[500px] px-8 md:px-0 mb-4 lg:mb-0 mt-4 lg:pt-0">
+                            <div class="w-full text-center lg:text-left flex flex-col lg:mt-[100px]">
 
-                            <div x-show="activeSlide === 0" class="w-full md:w-[640px] relative h-[250px] md:h-[500px] ml-10 lg:ml-0">
-                                <div class="absolute w-full h-full flex items-center">
-                                    <div class="move1 mb-40 ml-4 h-[50px] w-[80px] md:h-[100px] md:w-[160px] rounded-xl shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][1]) }}" alt="">
-                                    </div>
+                                <div class="text-5xl font-extrabold mb-8 ptserifbold w-fit">
+                                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-white">
+                                        {{ $slide['title'] }}
+                                    </span>
                                 </div>
-                                <div class="absolute w-full h-full flex justify-center">
-                                    <div class="move2 h-[150px] w-[125px] md:h-[300px] md:w-[250px] rounded-xl shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][0]) }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="absolute w-full h-full flex justify-end">
-                                    <div class="move3 h-[60px] w-[90px] md:h-[120px] md:w-[180px] rounded-xl mr-24 mt-8 shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][3]) }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="absolute w-full h-full flex items-end">
-                                    <div class="move4 h-[100px] w-[165px] md:h-[200px] md:w-[330px] rounded-xl mb-14 shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][2]) }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="absolute w-full h-full flex items-end justify-end">
-                                    <div class="move5 mb-20 mr-24 h-[70px] w-[112px] md:h-[100px] md:w-[160px] rounded-xl shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][4]) }}" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                                @php
+                                    $words = explode('. ', $slide['content']);
+                                @endphp
 
-                            <div x-show="activeSlide === 1" class="w-full md:w-[640px] relative h-[250px] md:h-[500px]  ml-10 lg:ml-0">
-                                <div class="absolute w-full h-full flex justify-center">
-                                    <div class="move1 mb-20 mr-24 h-[70px] w-[112px] md:h-[100px] md:w-[160px] rounded-xl shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][0]) }}" alt="">
-                                    </div>
+                                <div class="textScale1 pl-4 text-2xl font-extrabold mb-4 ptserifbold w-fit">
+                                    <span class="bg-clip-text text-transparent rounded-md py-1 px-2 bg-gradient-to-r from-white to-white">
+                                        {{ $words[0] }}
+                                    </span>
                                 </div>
-                                <div class="absolute w-full h-full flex justify-end">
-                                    <div class="move2 h-[60px] w-[90px] md:h-[120px] md:w-[180px] rounded-xl mr-24 mt-8 shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][1]) }}" alt="">
-                                    </div>
+                                <div class="textScale2 pl-4 text-2xl font-extrabold mb-4 ptserifbold w-fit">
+                                    <span class="bg-clip-text text-transparent rounded-md py-1 px-2 bg-gradient-to-r from-white to-white">
+                                        {{ $words[1] }}
+                                    </span>
                                 </div>
-
-                                <div class="absolute w-full h-full flex items-end justify-center">
-                                    <div class="move3 h-[150px] w-[125px] md:h-[300px] md:w-[250px] rounded-xl ml-24 shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][2]) }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="absolute w-full h-full flex items-center">
-                                    <div class="move4 h-[100px] w-[165px] md:h-[200px] md:w-[330px] rounded-xl mb-14 shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][3]) }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="absolute w-full h-full flex items-end">
-                                    <div class="move5 mb-24 ml-4 h-[70px] w-[112px] md:h-[100px] md:w-[160px] rounded-xl shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][4]) }}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div x-show="activeSlide === 2" class="w-full md:w-[640px] relative h-[250px] md:h-[500px] ml-10 lg:ml-0">
-                                <div class="absolute w-full h-full flex justify-end">
-                                    <div class="move5 h-[60px] w-[90px] md:h-[120px] md:w-[180px] rounded-xl mr-24 mt-8 shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][0]) }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="absolute w-full h-full flex items-center">
-                                    <div class="move1 mt-20 ml-4 h-[70px] w-[112px] md:h-[100px] md:w-[160px] rounded-xl shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][1]) }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="absolute w-full h-full flex justify-center items-end">
-                                    <div class="move2 h-[150px] w-[125px] md:h-[300px] md:w-[250px] rounded-xl mb-20 shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][2]) }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="absolute w-full h-full flex items-start">
-                                    <div class="move3 h-[100px] w-[165px] md:h-[200px] md:w-[330px] rounded-xl mb-14 shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][3]) }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="absolute w-full h-full flex items-end justify-end">
-                                    <div class="move4 mr-32 h-[70px] w-[112px] md:h-[100px] md:w-[160px] rounded-xl shadow-xl">
-                                        <img class="w-full h-full object-cover rounded-xl"
-                                            src="{{ asset('images/' . $slide['images'][4]) }}" alt="">
-                                    </div>
+                                <div class="textScale3 pl-4 text-2xl font-extrabold mb-4 ptserifbold w-fit">
+                                    <span class="bg-clip-text text-transparent rounded-md py-1 px-2 bg-gradient-to-r from-white to-white">
+                                        {{ $words[2] }}
+                                    </span>
                                 </div>
                             </div>
                         </div>
+
+                        <div x-show="activeSlide === 0"
+                            class="w-full md:w-[640px] relative h-[200px] md:h-[400px] ml-10 lg:ml-0">
+                            <div class="absolute w-full h-full flex flex-row">
+                                <img class="move1 w-4/12 md:w-5/12 aspect-[4/3] h-fit object-cover rounded-xl md:mt-14 md:-ml-10"
+                                    src="{{ asset('images/' . $slide['images'][1]) }}" alt="">
+                                <div class="w-8/12 md:w-7/12"></div>
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <div class="w-3/12"></div>
+                                <img class="move2 w-7/12 aspect-[3/4] h-fit object-cover rounded-xl mt-10 md:mt-4 -ml-10 md:ml-0"
+                                    src="{{ asset('images/' . $slide['images'][0]) }}" alt="">
+                                <div class="w-2/12"></div>
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <div class="w-8/12"></div>
+                                <img class="move3 w-4/12 aspect-[4/3] h-fit object-cover rounded-xl mt-4 md:mt-8 mr-14 md:mr-0"
+                                    src="{{ asset('images/' . $slide['images'][3]) }}" alt="">
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <img class="move4 w-7/12 aspect-[5/3] h-fit object-cover rounded-xl mt-[230px] md:mt-[280px] lg:mt-[350px] -ml-4"
+                                    src="{{ asset('images/' . $slide['images'][2]) }}" alt="">
+                                <div class="w-5/12"></div>
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <div class="w-8/12"></div>
+                                <img class="move5 w-4/12 aspect-[4/3] h-fit object-cover rounded-xl mt-[200px] md:mt-[380px]  mr-14 md:mr-4"
+                                    src="{{ asset('images/' . $slide['images'][4]) }}" alt="">
+                            </div>
+                        </div>
+
+                        <div x-show="activeSlide === 1"
+                            class="w-full md:w-[640px] relative h-[200px] md:h-[400px]  ml-10 lg:ml-0">
+                            <div class="absolute w-full h-full flex flex-row">
+                                <div class="w-2/12"></div>
+                                <img class="move1 w-5/12 aspect-[4/3] h-fit object-cover rounded-xl mt-0 -ml-20 lg:-ml-32"
+                                    src="{{ asset('images/' . $slide['images'][0]) }}" alt="">
+                                <div class="w-5/12"></div>
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <div class="w-3/12"></div>
+                                <img class="move3 w-7/12 aspect-[3/4] h-fit object-cover rounded-xl mt-14 md:mt-28 -ml-10 md:ml-20 lg:ml-0 lg:mt-28"
+                                    src="{{ asset('images/' . $slide['images'][2]) }}" alt="">
+                                <div class="w-2/12"></div>
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <div class="w-7/12"></div>
+                                <img class="move2 w-5/12 aspect-[4/3] h-fit object-cover rounded-xl mt-4 mr-14 md:mt-10 md:mr-0 lg:mr-14"
+                                    src="{{ asset('images/' . $slide['images'][1]) }}" alt="">
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <img class="move4 w-7/12 aspect-video lg:aspect-[9/6] h-fit object-cover rounded-xl mt-[230px] md:mt-[340px] ml-0 lg:-ml-20"
+                                    src="{{ asset('images/' . $slide['images'][3]) }}" alt="">
+                                <div class="w-5/12"></div>
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <div class="w-8/12"></div>
+                                <img class="move1 w-4/12 aspect-[4/3] h-fit object-cover rounded-xl mt-4 mr-14 md:mr-0 mt-[190px] md:mt-[350px] lg:mt-[400px]"
+                                    src="{{ asset('images/' . $slide['images'][4]) }}" alt="">
+                            </div>
+                        </div>
+
+                        <div x-show="activeSlide === 2"
+                            class="w-full md:w-[640px] relative h-[200px] md:h-[400px]  ml-10 lg:ml-0">
+                            <div class="absolute w-full h-full flex flex-row">
+                                <div class="w-1/12"></div>
+                                <img class="move1 w-6/12 aspect-[6/4] h-fit object-cover rounded-xl mt-0 -ml-14 md:-ml-20 lg:-ml-32"
+                                    src="{{ asset('images/' . $slide['images'][0]) }}" alt="">
+                                <div class="w-5/12"></div>
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <img class="move2 w-8/12 aspect-[8/9] h-fit object-cover rounded-xl mt-14 md:mt-10 ml-10 md:ml-32 lg:ml-0 lg:mt-28"
+                                    src="{{ asset('images/' . $slide['images'][2]) }}" alt="">
+                                <div class="w-4/12"></div>
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <div class="w-8/12"></div>
+                                <img class="move1 w-4/12 aspect-[4/3] h-fit object-cover rounded-xl mt-4 mr-14 md:mt-10 md:mr-0 lg:mr-14"
+                                    src="{{ asset('images/' . $slide['images'][3]) }}" alt="">
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <img class="move4 w-7/12 aspect-video h-fit object-cover rounded-xl mt-[250px] md:mt-[320px] lg:mt-[400px] ml-0 md:-ml-8 lg:-ml-24"
+                                    src="{{ asset('images/' . $slide['images'][1]) }}" alt="">
+                                <div class="w-5/12"></div>
+                            </div>
+                            <div class="absolute w-full h-full flex flex-row">
+                                <div class="w-7/12"></div>
+                                <img class="move3 w-5/12 aspect-[4/3] h-fit object-cover rounded-xl mt-4 mr-14 md:mr-0 mt-[190px] md:mt-[270px] lg:mt-[350px]"
+                                    src="{{ asset('images/' . $slide['images'][4]) }}" alt="">
+                            </div>
+                        </div>
                     </div>
-                @endforeach
-            </div>
+                </div>
+            @endforeach
         </div>
     </div>
+</div>

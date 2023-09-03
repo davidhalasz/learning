@@ -1,11 +1,11 @@
 @php
     $routeName = Route::currentRouteName();
 @endphp
-<nav x-data="{ open: false }" class="bg-blue-50">
+<nav x-data="{ open: false }" class="">
     <div class="container mx-auto">
-        <div class="flex justify-between items-center h-32 px-4 ">
-            <a href="/" class="text-gray-600 text-xl font-semibold">
-                <img class="h-28" src="{{asset('images/NORTH-COAST.png')}}" alt="">
+        <div class="flex justify-between items-center h-36 px-4 text-gray-200" id="navbar">
+            <a href="/" class="text-xl font-semibold">
+                <img class="h-36" src="{{asset('images/NORTH-COAST.png')}}" alt="">
             </a>
 
             <!-- Hamburger button -->
@@ -25,20 +25,28 @@
             <!-- Menu -->
             <div class="hidden md:flex md:items-center">
                 <a href="/"
-                    class="px-4 py-2 text-lg font-bold rounded-sm {{ $routeName == 'index' ? 'underline underline-offset-4 decoration-double decoration-gray-700 text-gray-600' : 'text-gray-600 hover:text-gray-600' }}">
+                    class="px-4 py-2 text-lg font-bold rounded-sm">
                     Főoldal
                 </a>
-                <a onclick="scrollToDiv()"
-                    class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer {{ $routeName == 'rolunk' ? 'underline underline-offset-4 decoration-double decoration-gray-700 text-gray-600' : 'text-gray-600 hover:text-gray-600' }}">
-                    Szolgáltatások
+                <a onclick="scrollToDiv('uzletviteliTanacsadas')"
+                    class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer">
+                    Üzletviteli tanácsadás
                 </a>
-                <a href="/kepzesek"
-                    class="px-4 py-2 text-lg font-bold rounded-sm {{ $routeName == 'guest.araink' ? 'underline underline-offset-4 decoration-double decoration-gray-700 text-gray-600' : 'text-gray-600 hover:text-gray-600' }}">
-                    Képzések
+                <a onclick="scrollToDiv('businessCoaching')"
+                    class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer">
+                    Business coaching
                 </a>
-                <a href="/kapcsolat"
-                    class="px-4 py-2 text-lg font-bold rounded-sm {{ $routeName == 'guest.kapcsolat' ? 'underline underline-offset-4 decoration-double decoration-gray-700 text-gray-600' : 'text-gray-600 hover:text-gray-600' }}">
+                <a onclick="scrollToDiv('felnottkepzes')"
+                    class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer">
+                    Felnőttképzés
+                </a>
+                <a onclick="scrollToDiv('kapcsolat')"
+                    class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer">
                     Kapcsolat
+                </a>
+                <a href="/verzio2"
+                    class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer">
+                    V2
                 </a>
             </div>
         </div>
@@ -52,3 +60,31 @@
         </div>
     </div>
 </nav>
+
+
+<script>
+    // Get the button
+    let navbar = document.getElementById("navbar");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.classList.remove("hidden");
+            navbar.classList.add("block");
+
+        } else {
+            navbar.classList.remove("block");
+            navbar.classList.add("hidden");
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>

@@ -2,20 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+        font-family: "ptserifBold";
+        font-weight: 400;
+        src: url(../../fonts/PT_Serif/PTSerif-Bold.ttf);
+    }
+}
+
+.ptserifbold {
+    font-family: ptserifBold;
+}
+
 
 html {
     scroll-behavior: smooth;
-  }
-
-.dynamic-height {
-
 }
+
+.dynamic-height {}
 
 /* INDEX COUNTER */
 .counter {
     opacity: 0;
     transition: opacity 0.5s ease;
-  }
+}
 
 /* INDEX CARD */
 .card {
@@ -37,9 +47,9 @@ html {
 }
 
 .card-content {
-   max-height: 100px;
-   transition: max-height 0.35s ease;
-   z-index: 3;
+    max-height: 100px;
+    transition: max-height 0.35s ease;
+    z-index: 3;
 }
 
 .card-btn {
@@ -51,7 +61,7 @@ html {
     transition: max-height 0.35s ease-in;
 }
 
-.card-img{
+.card-img {
     overflow: hidden;
 }
 
@@ -68,8 +78,10 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Dark overlay color */
-    opacity: 0; /* Initially transparent */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Dark overlay color */
+    opacity: 0;
+    /* Initially transparent */
     transition: opacity 0.3s ease;
     z-index: 3;
 }
@@ -92,10 +104,21 @@ html {
 
 /*end card   bg-[#dfe5ea]*/
 
-.linear-bg {
-    background: linear-gradient(-180deg,#eef2f5 20%,#fff);
+.linear-bg-1 {
+    background: linear-gradient(-180deg, #fff 50%, rgb(209 213 219));
 }
 
+.linear-bg-2 {
+    background: linear-gradient(-180deg, #fff 20%, #fff);
+}
+
+.linear-bg-3 {
+    background: linear-gradient(-180deg, #0F335B 40%, #1a508e);
+}
+
+.bbbg {
+    color: #c5d4e3;
+}
 
 .move1 {
     position: relative;
@@ -134,7 +157,101 @@ html {
 
 @keyframes slideDown {
     to {
-      top: 0;
-      left: 0;
+        top: 0;
+        left: 0;
     }
-  }
+}
+
+
+.gradientBg {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(16deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+}
+
+.gradientBg2 {
+    background-image: linear-gradient( 69.5deg,  rgba(15, 51, 91, 1) 2.3%, rgba(21, 94, 104, 1) 97.6% );
+}
+
+.gradientBg3 {
+    background-image: radial-gradient(circle farthest-corner at 23.7% 2.3%, rgb(42, 245, 152) 0%, rgba(15, 51, 92, 1) 60%);
+}
+
+@keyframes scaleText {
+    0% {
+        transform: opacity(0);
+    }
+
+    100% {
+        transform: opacity(1);
+    }
+}
+
+@keyframes scaleText1 {
+    0% {
+        transform: scale(0);
+    }
+
+    70% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleText2 {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    70% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleText3 {
+    0% {
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(0);
+    }
+
+    90% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.textScale {
+    animation: scaleText 0.1s ease-in;
+}
+
+.textScale1 {
+    animation: scaleText1 0.5s ease-in;
+}
+
+.textScale2 {
+    animation: scaleText2 0.5s ease-in;
+}
+
+.textScale3 {
+    animation: scaleText3 0.5s ease-in;
+}
+
+.darkBlue {
+    color: #0f4e95;
+}
