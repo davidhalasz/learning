@@ -15,9 +15,11 @@ https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css
 " rel="stylesheet">
 
     <!-- Scripts -->
-
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+   
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+     <!--
+    <link rel="stylesheet" href="/build/assets/app-16a41202.css">
+    <script src="/build/assets/app-476eb4f6.js" defer></script>-->
     <!-- Scripts -->
 </head>
 

@@ -14,7 +14,7 @@ class Controller extends BaseController
         $slides = [
             [
                 'title' => 'Üzletviteli tanácsadás',
-                'content' => 'Projektelőkészítés. Megvalósítás. Monitorozás',
+                'content' => 'Projekt előkészítés. Megvalósítás. Monitorozás',
                 'images' => [
                     'index1.jpeg',
                     'index2.jpeg',
@@ -25,7 +25,7 @@ class Controller extends BaseController
             ],
             [
                 'title' => 'Business coaching',
-                'content' => 'Hatékonyság növelés. Kompetencia fejlesztés. Szervezet fejlesztés',
+                'content' => 'Hatékonyságnövelés. Kompetenciafejlesztés. Szervezetfejlesztés',
                 'images' => [
                     'index13.jpg',
                     'index11.jpeg',

@@ -1,8 +1,7 @@
 <x-guest-layout>
-    <div class="gradientBg3">
+    <div style=" font-family: Segoe UI;">
         @include('components.navbar')
         @include('components.welcome.carousel')
+         @include('components.welcome.explore')
     </div>
-
-    @include('components.welcome.explore')
 </x-guest-layout>

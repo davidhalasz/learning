@@ -169,7 +169,7 @@ html {
 }
 
 .gradientBg2 {
-    background-image: linear-gradient( 69.5deg,  rgba(15, 51, 91, 1) 2.3%, rgba(21, 94, 104, 1) 97.6% );
+    background-image: linear-gradient(69.5deg, rgba(15, 51, 91, 1) 2.3%, rgba(21, 94, 104, 1) 97.6%);
 }
 
 .gradientBg3 {
@@ -256,10 +256,16 @@ html {
     color: #0f4e95;
 }
 
-.navbarheight{
-    height: calc(100vh - 144px);
-    height: -o-calc(100vh - 144px); /* opera */
-    height: -webkit-calc(100vh - 144px); /* google, safari */
-    height: -moz-calc(100vh - 144px); /* firefox */
+.heroheight {
+    height: calc(100vh - 112px);
+    height: -o-calc(100vh - 112px);
+    /* opera */
+    height: -webkit-calc(100vh - 112px);
+    /* google, safari */
+    height: -moz-calc(100vh - 112px);
+    /* firefox */
 }
 
+.navbarBg {
+    background-color: #0F335B;
+}
