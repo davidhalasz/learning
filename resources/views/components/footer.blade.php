@@ -6,7 +6,7 @@
         <div class="flex justify-center">
             <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 w-fit gap-8 lg:gap-16">
                 <div class="md:col-span-2 lg:col-span-1 m-auto">
-                    <img class="w-56" src="{{asset('images/NORTH-COAST4.png')}}" alt="">
+                    <img class="w-56" src="{{asset('images/northcoastfeherlogo.png')}}" alt="">
                 </div>
                 <div>
                     <h1 class="text-xl mb-4 font-semibold">CÉGINFORMÁCIÓK</h1>

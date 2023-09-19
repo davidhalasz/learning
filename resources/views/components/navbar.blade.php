@@ -6,7 +6,7 @@
         <div class="container mx-auto">
             <div class="flex justify-between items-center h-32 px-4 ">
                 <a href="/" class="text-xl font-semibold">
-                    <img class="w-56" src="{{asset('images/NORTH-COAST4.png')}}" alt="">
+                    <img class="w-56" src="{{asset('images/northcoastfeherlogo.png')}}" alt="">
                 </a>
 
                 <!-- Hamburger button -->

@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>North Coast</title>
+    <link rel="icon" href="{{ url('logo/nc.png') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -15,11 +16,9 @@ https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css
 " rel="stylesheet">
 
     <!-- Scripts -->
-   
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-     <!--
+     
     <link rel="stylesheet" href="/build/assets/app-16a41202.css">
-    <script src="/build/assets/app-476eb4f6.js" defer></script>-->
+    <script src="/build/assets/app-476eb4f6.js" defer></script>
     <!-- Scripts -->
 </head>
 

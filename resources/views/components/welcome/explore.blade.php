@@ -145,7 +145,7 @@
                     <a href="#" class="p-4 text-green-400 flex items-center text-lg hover:text-blue-100">
                         <p>Adatkezelési tájékoztató</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>

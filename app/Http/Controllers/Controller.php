@@ -16,7 +16,7 @@ class Controller extends BaseController
                 'title' => 'Üzletviteli tanácsadás',
                 'content' => 'Projekt előkészítés. Megvalósítás. Monitorozás',
                 'images' => [
-                    'index1.jpeg',
+                    'index00.jpg',
                     'index2.jpeg',
                     'index3.jpg',
                     'index4.jpg',
