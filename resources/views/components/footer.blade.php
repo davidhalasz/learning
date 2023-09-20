@@ -1,8 +1,8 @@
-<div id="kapcsolat" class="w-full bg-[#0F335B] py-8 md:py-3 relative overflow-hidden h-full h-[500px] md:h-[400px] lg:h-[270px] tracking-wide text-white">
+<div id="kapcsolat" class="w-full bg-[#0F335B] py-8 md:py-3  tracking-wide text-white">
     <div class="container mx-auto absolute h-full overflow-hidden">
         <img class="m-auto opacity-10 lg:w-1/3" src="{{asset('images/logobg.png')}}" alt="">
     </div>
-    <div class="absolute container mx-auto bg-trasnparent h-fit py-14">
+    <div class="container mx-auto bg-trasnparent h-fit py-14">
         <div class="flex justify-center">
             <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 w-fit gap-8 lg:gap-16">
                 <div class="md:col-span-2 lg:col-span-1 m-auto">

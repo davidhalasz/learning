@@ -1,7 +1,7 @@
 @php
     $routeName = Route::currentRouteName();
 @endphp
-<div class="w-full bg-[#0F335B] text-white">
+<div class="w-full absolute text-white">
     <nav x-data="{ open: false }">
         <div class="container mx-auto">
             <div class="flex justify-between items-center h-32 px-4 ">
@@ -24,7 +24,7 @@
                 </div>
 
                 <!-- Menu -->
-                <div class="hidden lg:flex md:items-center tracking-wide">
+                <div class="hidden bg-[#0F335B] h-full rounded-bl-3xl lg:flex md:items-center tracking-wide">
                     <a href="/" class="px-4 py-2 text-lg font-bold rounded-sm">
                         Főoldal
                     </a>

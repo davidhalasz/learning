@@ -266,6 +266,10 @@ html {
     /* firefox */
 }
 
+.heroheightt {
+height: 100vh;
+}
+
 .navbarBg {
     background-color: #0F335B;
 }
