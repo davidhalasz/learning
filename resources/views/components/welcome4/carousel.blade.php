@@ -10,7 +10,7 @@
                 <div x-show="activeSlide === {{ $index }}" class="absolute inset-0 flex h-full justify-center">
                     <div class="w-full flex flex-col lg:flex-row gap-4 h-full justify-center items-center">
                         <div class="w-full md:w-full lg:w-1/2  px-8 md:px-0 mb-4 lg:mb-0 lg:pt-0">
-                            
+                            <p>sxsxsxsxsxsxsxsxsxsxsxsxsx</p>
                                 <img class="absolute inset-0 opacity-10 p-10 z-10" src="{{asset('images/logobg.png')}}" alt="">
                             
                             <div class="z-30 w-full text-center lg:text-left flex flex-col flex justify-center content-center"> 

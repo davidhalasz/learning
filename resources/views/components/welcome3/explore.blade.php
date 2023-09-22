@@ -1,3 +1,5 @@
+
+
 <div class="w-full bg-[#d5e4ef] pt-10">
     <div id="uzletviteliTanacsadas" class="container mx-auto linear-bg-1 py-20 rounded-[50px]">
         <h1 class="text-center font-bold text-3xl md:text-6xl">Üzletviteli tanácsadás</h1>

@@ -1,7 +1,7 @@
 @php
     $routeName = Route::currentRouteName();
 @endphp
-<div class="w-full absolute text-white">
+<div class="w-full absolute text-white bg-[#0F335B] lg:bg-transparent pb-4 transition ease-out duration-300">
     <nav x-data="{ open: false }">
         <div class="container mx-auto">
             <div class="flex justify-between items-center h-32 px-4 ">
@@ -27,7 +27,7 @@
                 <div class="hidden bg-[#0F335B] h-full rounded-bl-3xl lg:flex md:items-center tracking-wide">
                     <a href="/" class="px-4 py-2 text-lg font-bold rounded-sm">
                         Főoldal
-                    </a>
+                    </a> 
                     <a onclick="scrollToDiv('uzletviteliTanacsadas')"
                         class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer">
                         Üzletviteli tanácsadás
@@ -44,23 +44,18 @@
                         class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer">
                         Kapcsolat
                     </a>
-                    <a href="verzio2" 
-                    class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer">
-                    V2
-                </a>
-                <a href="verzio3" 
-                class="px-4 py-2 text-lg font-bold rounded-sm cursor-pointer">
-                V3
-            </a>
                 </div>
             </div>
 
             <!-- Mobile menu -->
-            <div x-show="open" class="lg:hidden text-white">
+            <div x-show="open" x-show="open" x-transition:enter="transform ease-out duration-300 transition" x-transition:enter-start="opacity-0 translate-y-[-100px]"
+            x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transform ease-in duration-300 transition"
+            x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-[-20px]" class="lg:hidden text-white">
                 <a href="/" class="block px-4 py-2 rounded-sm">Főoldal</a>
-                <a href="/rolunk" class="block px-4 py-2 rounded-sm">Rólunk</a>
-                <a href="/kepzesek" class="block px-4 py-2 rounded-sm">Képzések</a>
-                <a href="/kapcsolat" class="block px-4 py-2 rounded-sm">Kapcsolat</a>
+                <a onclick="scrollToDiv('uzletviteliTanacsadas')" class="block px-4 py-2 rounded-sm">Üzletviteli tanácsadás</a>
+                <a onclick="scrollToDiv('businessCoaching')" class="block px-4 py-2 rounded-sm">Business coaching</a>
+                <a onclick="scrollToDiv('felnottkepzes')" class="block px-4 py-2 rounded-sm">Felnőttképzés</a>
+                <a onclick="scrollToDiv('kapcsolat')" class="block px-4 py-2 rounded-sm">Kapcsolat</a>
             </div>
         </div>
     </nav>
