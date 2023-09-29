@@ -76,10 +76,10 @@
         </div>
     </div>
 
-    <div class="w-full bg-gray-300  py-20">
-        <div class="container mx-auto md:px-4">
-            <div id="uzletviteliTanacsadas"
-                class="lg:w-2/3 mx-auto py-10 md:py-20 rounded-[50px] bg-no-repeat bg-cover bg-center p-2 md:p-10 lg:p-20 shadow-xl"
+    <div id="uzletviteliTanacsadas" class="w-full min-h-screen bg-gray-300 py-10">
+        <div class="container mx-auto min-h-screen flex items-center">
+            <div 
+                class="lg:w-2/3 m-auto h-fit p-4 md:p-10 rounded-[50px] bg-no-repeat bg-cover bg-center shadow-xl"
                 style="background-image: url('{{ asset('images/tanacsadas_elokeszites.jpeg') }}')">
                 <div class="backdrop-opacity-10 bg-[#0F335B]/90 p-8 md:p-10 flex flex-col rounded-xl text-white">
                     <h1 class="text-center font-bold text-xl md:text-3xl">Üzletviteli tanácsadás</h1>
@@ -113,10 +113,10 @@
         </div>
     </div>
 
-    <div class="w-full bg-[#0F335B] py-20">
-        <div class="container mx-auto md:px-4">
-            <div id="businessCoaching"
-                class="lg:w-2/3 mx-auto  py-10 md:py-20 rounded-[50px] bg-no-repeat bg-cover bg-center p-2 md:p-10 lg:p-20 shadow-xl"
+    <div id="businessCoaching" class="w-full min-h-screen bg-[#0F335B]">
+        <div class="container mx-auto min-h-screen flex items-center py-10">
+            <div 
+                class="lg:w-2/3 p-10 m-auto h-fit p-4 md:p-10 rounded-[50px] bg-no-repeat bg-cover bg-center shadow-xl"
                 style="background-image: url('{{ asset('images/index13.jpg') }}')">
                 <div class="backdrop-opacity-10 bg-white/90 p-8 md:p-10 flex flex-col rounded-xl">
                     <h1 class="text-center font-bold text-xl md:text-3xl">Business coaching</h1>
@@ -169,8 +169,7 @@
                         </p>
                         <p class="p-4 text-lg">
                             <span class="font-bold">Ügyfélszolgálat nyitvatartása:</span></br>
-                            Hétfőtől-Péntekig: 8:00-16:30</br>
-                            Szombat és Vasárnap: ZÁRVA
+                            Hétfőtől-Péntekig: 8:00-16:30
                         </p>
                         <a href="#" class="p-4 text-green-400 flex items-center text-lg hover:text-blue-100">
                             <p>Adatkezelési tájékoztató</p>

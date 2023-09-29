@@ -8,6 +8,23 @@
     <title>North Coast</title>
     <link rel="icon" href="{{ url('logo/nc.png') }}">
 
+
+    <meta name="description" content="North Coast Tanácsadó Kft. Üzletviteli tanácsadás, business coaching, felnőttképzés">
+    <meta name="keywords" content="North Coast Tanácsadó Kft. Üzletviteli tanácsadás, business coaching, felnőttképzés">
+    <meta name="author" content="North Coast">
+
+    <!-- Open Graph Protocol (OGP) for social media sharing -->
+    <meta property="og:title" content="North Coast Tanácsadó Kft.">
+    <meta property="og:description" content="North Coast Tanácsadó Kft. Üzletviteli tanácsadás, business coaching, felnőttképzés">
+    <meta property="og:image" content="{{ url('logo/nc.png') }}">
+    <meta property="og:url" content="https://krisz-vill.hu/">
+
+    <!-- Twitter Card for Twitter sharing -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="North Coast Tanácsadó Kft.">
+    <meta name="twitter:description" content="North Coast Tanácsadó Kft. Üzletviteli tanácsadás, business coaching, felnőttképzés">
+    <meta name="twitter:image" content="{{ url('logo/nc.png') }}">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
