@@ -6,7 +6,7 @@
             <a class="cursor-pointer hover:scale-110 duration-200" onclick="scrollToDiv('uzletviteliTanacsadas')">
                 <div class="flex flex-col rounded-lg bg-white pb-8 shadow-lg">
                     <div class="relative">
-                        <img class="aspect-[5/3] object-cover rounded-t-lg" src="{{ asset('images/index3.jpg') }}"
+                        <img class="aspect-[5/3] w-full object-cover rounded-t-lg" src="{{ asset('images/index3.jpg') }}"
                             alt="">
                         <div class="w-full flex justify-center">
                             <div
@@ -29,7 +29,7 @@
             <a class="cursor-pointer hover:scale-110 duration-200" onclick="scrollToDiv('businessCoaching')">
                 <div class="flex flex-col rounded-lg bg-white pb-8 shadow-lg">
                     <div class="relative">
-                        <img class="aspect-[5/3] object-cover rounded-t-lg" src="{{ asset('images/index4.jpg') }}"
+                        <img class="aspect-[5/3] w-full object-cover rounded-t-lg" src="{{ asset('images/index4.jpg') }}"
                             alt="">
                         <div class="w-full flex justify-center">
                             <div
@@ -52,7 +52,7 @@
             <a class="cursor-pointer hover:scale-110 duration-200" onclick="scrollToDiv('felnottkepzes')">
                 <div class="flex flex-col rounded-lg bg-white pb-8 shadow-lg">
                     <div class="relative">
-                        <img class="aspect-[5/3] object-cover rounded-t-lg" src="{{ asset('images/index6.jpeg') }}"
+                        <img class="aspect-[5/3] w-full object-cover rounded-t-lg" src="{{ asset('images/index6.jpeg') }}"
                             alt="">
                         <div class="w-full flex justify-center">
                             <div

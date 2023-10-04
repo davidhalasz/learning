@@ -132,7 +132,7 @@ class Controller extends BaseController
         return view('welcome3', compact(['slides']));
     }
 
-    public function verzio4() {
+    public function verzio4() { 
         $slides = [
             [
                 'title' => 'Üzletviteli tanácsadás',

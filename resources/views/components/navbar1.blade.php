@@ -29,9 +29,9 @@
                 </div>
 
                 <!-- Menu -->
-                <div class="w-[800px] 2xl:w-[1250px] h-full hidden lg:block">
+                <div class="w-fit  h-full hidden lg:block 2xl:mr-[1%]">
                     <div
-                        class="px-10 hidden bg-[#0F335B] h-full rounded-bl-3xl lg:flex justify-center lg:gap-8 md:items-center">
+                        class="px-10 hidden bg-[#0F335B] h-full rounded-bl-3xl lg:flex justify-center lg:gap-8 md:items-center ">
                         <a href="/" class="py-2 text-lg font-bold rounded-sm">
                             Főoldal
                         </a>
